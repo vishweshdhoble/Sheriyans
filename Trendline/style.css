@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+}
+
+#nav{
+    height: 4vw;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2.5vw;
+}
+
+#nav i{
+    display: none;
+}
+
+#nav-part1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.05vw;
+}
+
+#gola{
+    height: 1.2vw;
+    width: 1.2vw;
+    background-color: black;
+    border-radius: 50%;
+}
+
+#nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5vw;
+}
+
+#nav-part2 h4{
+    font-weight: 600;
+    font-size: 0.8vw;
+}
+
+#nav-part2 h4 span{
+    color: rgb(126, 126, 126);
+    margin-left: 1.25vw;
+}
+
+#nav2
+{
+    height: 3.5vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 2.5vw;
+    gap: 4.5vw;
+}
+
+#nav2 h3{
+    font-size: 0.9vw;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#content{
+    height: calc(100% - 7.5vw);
+    width: 100%;
+    /* background-color: aquamarine; */
+}
+
+#text-content{
+    height: 40%;
+    width: 100%;
+    /* background-color: burlywood; */
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+#text-content::-webkit-scrollbar{
+    background-color: transparent;
+    height: 0.3vw;
+}
+
+#text-content::-webkit-scrollbar-thumb{
+    background-color: orangered;
+}
+
+.elem{
+    flex-shrink: 0;
+    height: 100%;
+    width: 60%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.elem h1{
+    font-size: 6.5vw;
+    font-weight: 500;
+    font-family: Gilroy;
+}
+
+#image-content{
+    height: 60%;
+    width: 100%;
+    /* background-color: blueviolet; */
+    display: flex;
+    overflow-x: auto;
+}
+
+#image-content img{
+    flex-shrink: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#image-content::-webkit-scrollbar{
+    display: none;
+}
+
+@media (max-width:600px)
+{
+    #nav{
+        height: 12vw;
+        width: 100%;
+        padding: 0 7.5vw;
+    }
+    
+    #nav h4{
+        gap: 0.15vw;
+        display: none;
+    }
+
+    #nav i{
+        display: initial;
+        font-size: 4.6vw;
+        font-weight: 700;
+    }
+
+    #nav h4:nth-child(1){
+        display: initial;
+        margin-right: 3.75vw;
+    }
+    
+    #gola{
+        height: 4.6vw;
+        width: 4.6vw;
+        background-color: black;
+        border-radius: 50%;
+    }
+    
+    #nav-part2{
+        align-items: center;
+        gap: 7.5vw;
+    }
+    
+    #nav-part2 h4{
+        font-weight: 600;
+        font-size: 3.6vw;
+    }
+    
+    #nav-part2 h4 span{
+        color: rgb(126, 126, 126);
+        margin-left: 1.5vw;
+    }
+    
+    #nav2
+    {
+        height: 10.5vw;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 7.5vw;
+        /* gap: 1vw; */
+    }
+    
+    #nav2 h3{
+        font-size: 2vw;
+        text-transform: uppercase;
+        font-weight: 500;
+        color: #444;
+    }
+
+    #content{
+        height: calc(100% - 22.5vw);
+        width: 100%;
+        /* background-color: aquamarine; */
+    }
+    
+    #text-content{
+        height: 35%;
+        width: 100%;
+        /* background-color: burlywood; */
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+    
+    #text-content::-webkit-scrollbar{
+        background-color: transparent;
+        height: 0.3vw;
+    }
+    
+    #text-content::-webkit-scrollbar-thumb{
+        background-color: orangered;
+    }
+    
+    .elem{
+        flex-shrink: 0;
+        height: 100%;
+        width: 80%;
+        /* background-color: red; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .elem h1{
+        font-size: 16vw;
+        font-weight: 500;
+        font-family: Gilroy;
+        white-space: nowrap;
+    }
+    
+    #image-content{
+        height: 65%;
+        width: 100%;
+        /* background-color: blueviolet; */
+        display: flex;
+        overflow-x: auto;
+    }
+    
+    #image-content img{
+        flex-shrink: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    #image-content img:nth-child(3){
+        background-position: 0 20%;
+        object-position: left;
+    }
+    
+    #image-content::-webkit-scrollbar{
+        display: none;
+    }
+}
